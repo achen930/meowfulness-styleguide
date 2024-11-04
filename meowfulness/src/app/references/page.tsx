@@ -1,10 +1,9 @@
 import Nav from "@/components/NavBar";
-import Image from "next/image";
-
-export default function Home() {
+export default function References() {
   return (
     <div>
       <Nav></Nav>
+      <h1>References</h1>
     </div>
   );
 }

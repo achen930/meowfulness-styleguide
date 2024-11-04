@@ -1,10 +1,9 @@
 import Nav from "@/components/NavBar";
-import Image from "next/image";
-
-export default function Home() {
+export default function Logo() {
   return (
     <div>
       <Nav></Nav>
+      <h1>Logo</h1>
     </div>
   );
 }

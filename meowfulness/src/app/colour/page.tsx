@@ -1,10 +1,9 @@
 import Nav from "@/components/NavBar";
-import Image from "next/image";
-
-export default function Home() {
+export default function Colour() {
   return (
     <div>
       <Nav></Nav>
+      <h1>Colour</h1>
     </div>
   );
 }
