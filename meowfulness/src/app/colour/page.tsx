@@ -59,15 +59,15 @@ export default function Colour() {
 				<p className="text-lg mb-8 max-w-3xl text-center">
 					Our color palette centers around green tones to bring a sense of
 					nature, balance, and calmness to our app, creating a soothing
-					environment that promotes relaxation and reduces anxiety. Green's
+					environment that promotes relaxation and reduces anxiety. Green&apos;s
 					natural associations with growth and renewal subtly reinforce themes
 					of personal growth and healing, making our app feel grounded and
 					supportive.
 				</p>
 				<p className="text-lg mb-8 max-w-3xl text-center">
 					Psychologically, green promotes balance and harmony, helping users
-					feel centered as they navigate mental health challenges. It's also
-					gentle on the eyes, making it comfortable for prolonged use, and
+					feel centered as they navigate mental health challenges. It&apos;s
+					also gentle on the eyes, making it comfortable for prolonged use, and
 					symbolically aligns with health and well-being, reinforcing positive,
 					wellness-focused interactions within the app.
 				</p>
