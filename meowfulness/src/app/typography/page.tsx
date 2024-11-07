@@ -110,7 +110,8 @@ export default function Typography() {
 						</h2>
 						<blockquote className="border-l-4 border-secondary pl-4 italic text-lg font-light bg-secondary bg-opacity-20 p-4 rounded-lg shadow-lg flex items-center text-white">
 							<FaQuoteLeft className="text-accent mr-3" />
-							"This is a blockquote styled for emphasis and readability."
+							&quot;This is a blockquote styled for emphasis and
+							readability.&quot;
 						</blockquote>
 					</div>
 
