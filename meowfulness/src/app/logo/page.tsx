@@ -2,7 +2,7 @@ import Nav from "@/components/NavBar";
 
 export default function Logo() {
 	return (
-		<div className="space-y-12 p-8 py-12 bg-secondary text-white">
+		<div className="space-y-8 px-8 py-12 bg-secondary text-white">
 			<Nav />
 
 			<h1 className="text-5xl font-bold text-center underline decoration-accent">
