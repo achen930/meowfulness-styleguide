@@ -3,19 +3,19 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 export default function Typography() {
 	return (
-		<div className="bg-primary min-h-screen text-white px-8 py-12">
+		<div className="bg-primary text-white px-8 py-12 text-center">
 			<Nav />
-			<section className="mt-8 flex flex-col items-center text-white">
+			<section className="mt-8 flex flex-col items-center text-white px-2">
 				<h1 className="font-bold text-5xl mb-4 underline decoration-accent">
 					Typography Style Guide
 				</h1>
-				<p className="text-lg mb-8 text-center max-w-xl italic text-white">
+				<p className="text-lg mb-8 text-center italic text-white">
 					A guide showcasing the typography styles and creative choices that
 					give our application its unique character.
 				</p>
 
 				{/* Font Overview */}
-				<div className="w-full max-w-3xl space-y-12 text-center">
+				<div className="w-full space-y-12 text-center">
 					{/* Headers Section */}
 					<div>
 						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">

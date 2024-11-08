@@ -40,14 +40,14 @@ export default function Colour() {
 	};
 
 	return (
-		<div className="bg-tertiary min-h-screen text-white px-8 py-12">
+		<div className="bg-tertiary min-h-screen w-full text-white px-8 py-12">
 			<Nav />
-			<section className="mt-8 flex flex-col items-center text-white">
+			<section className="mt-8 flex flex-col items-center text-white px-2">
 				<h1 className="font-bold text-5xl mb-4 underline decoration-accent">
 					Colour Style Guide
 				</h1>
 
-				<p className="text-lg mb-8 text-center max-w-xl italic">
+				<p className="text-lg mb-8 text-center italic">
 					This guide details the colour palette and accessibility considerations
 					to ensure a visually cohesive and inclusive design.
 				</p>
@@ -56,7 +56,7 @@ export default function Colour() {
 				<h2 className="text-3xl font-bold underline decoration-accent mb-4">
 					Color Palette Rationale
 				</h2>
-				<p className="text-lg mb-8 max-w-3xl text-center">
+				<p className="text-lg mb-8 text-center">
 					Our color palette centers around green tones to bring a sense of
 					nature, balance, and calmness to our app, creating a soothing
 					environment that promotes relaxation and reduces anxiety. Green&apos;s
@@ -64,7 +64,7 @@ export default function Colour() {
 					of personal growth and healing, making our app feel grounded and
 					supportive.
 				</p>
-				<p className="text-lg mb-8 max-w-3xl text-center">
+				<p className="text-lg mb-8 text-center">
 					Psychologically, green promotes balance and harmony, helping users
 					feel centered as they navigate mental health challenges. It&apos;s
 					also gentle on the eyes, making it comfortable for prolonged use, and
@@ -73,7 +73,7 @@ export default function Colour() {
 				</p>
 
 				{/* Color Palette Cards */}
-				<div className="w-full max-w-3xl grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+				<div className="w-full grid gap-8 sm:grid-cols-2 md:grid-cols-3">
 					{colors.map((color) => (
 						<div
 							key={color.name}
@@ -125,7 +125,7 @@ export default function Colour() {
 					{/* Text on Solid Color Backgrounds */}
 					<div className="space-y-4">
 						<p className="text-lg font-semibold">Text on Colour Backgrounds</p>
-						<div className="space-y-2">
+						<div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2">
 							<div className="p-4 bg-primary text-white font-medium rounded">
 								Text on Primary Background
 							</div>
@@ -188,14 +188,14 @@ export default function Colour() {
 				<h2 className="text-3xl font-bold mt-16 mb-4 underline decoration-accent">
 					Colour Accessibility
 				</h2>
-				<p className="text-lg max-w-3xl text-center">
+				<p className="text-lg text-center">
 					Below are screenshots and results from our contrast checks, ensuring
 					accessible text and background combinations. Each combination has been
 					tested for a minimum contrast ratio of 4.5:1 to meet WCAG AA
 					guidelines for normal text.
 				</p>
 
-				<div className="mt-8 w-full max-w-3xl grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+				<div className="mt-8 w-full grid gap-8 sm:grid-cols-2 md:grid-cols-3">
 					{/* Replace placeholders with actual contrast check screenshots */}
 					{colors.map((color) => (
 						<div key={color.name} className="space-y-2 text-center">

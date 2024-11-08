@@ -2,15 +2,15 @@ import Nav from "@/components/NavBar";
 
 export default function Logo() {
 	return (
-		<div className="space-y-12 p-8 bg-secondary text-white">
+		<div className="space-y-12 p-8 py-12 bg-secondary text-white">
 			<Nav />
 
-			<h1 className="text-4xl font-bold text-center underline decoration-accent">
+			<h1 className="text-5xl font-bold text-center underline decoration-accent">
 				Logo Design
 			</h1>
 
 			{/* Design Rationale */}
-			<section className="space-y-8">
+			<section className="space-y-8 flex flex-col items-center">
 				<h2 className="text-3xl font-semibold text-gray-200">
 					Design Rationale
 				</h2>
