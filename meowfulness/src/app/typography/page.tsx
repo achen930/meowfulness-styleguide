@@ -6,7 +6,7 @@ export default function Typography() {
 		<div className="bg-primary text-white px-8 py-12 text-center">
 			<Nav />
 			<section className="mt-8 flex flex-col items-center text-white px-2">
-				<h1 className="font-bold text-5xl mb-4 underline decoration-accent">
+				<h1 className="font-bold text-5xl mb-4 underline decoration-tertiary">
 					Typography Style Guide
 				</h1>
 				<p className="text-lg mb-8 text-center italic text-white">
@@ -18,10 +18,10 @@ export default function Typography() {
 				<div className="w-full space-y-12 text-center">
 					{/* Headers Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold mb-4 underline decoration-white">
 							Headers
 						</h2>
-						<div className="space-y-3 bg-secondary bg-opacity-20 rounded-lg p-6 shadow-lg">
+						<div className="space-y-3 bg-tertiary bg-opacity-20 rounded-lg p-6 shadow-lg">
 							<h1 className="text-5xl font-bold text-white">
 								H1 - DM Sans Bold 5xl
 							</h1>
@@ -45,7 +45,7 @@ export default function Typography() {
 
 					{/* Paragraphs Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold mb-4 underline decoration-white">
 							Paragraphs
 						</h2>
 						<p className="text-base font-normal bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg text-white">
@@ -57,10 +57,10 @@ export default function Typography() {
 
 					{/* Links Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold mb-4 underline decoration-white">
 							Links
 						</h2>
-						<div className="bg-secondary bg-opacity-20 p-6 rounded-lg shadow-lg">
+						<div className="bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg">
 							<a
 								href="#"
 								className="text-white font-medium text-lg hover:underline hover:text-accent transition duration-200"
@@ -75,10 +75,10 @@ export default function Typography() {
 
 					{/* Navigation Menu Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold mb-4 underline decoration-white">
 							Navigation Menu
 						</h2>
-						<nav className="text-lg space-x-8 bg-secondary bg-opacity-20 rounded-lg p-4 shadow-lg">
+						<nav className="text-lg space-x-8 bg-tertiary bg-opacity-20 rounded-lg p-4 shadow-lg">
 							<a
 								href="#"
 								className="font-semibold text-white hover:text-accent transition duration-200"
@@ -108,7 +108,7 @@ export default function Typography() {
 						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
 							Blockquotes
 						</h2>
-						<blockquote className="border-l-4 border-secondary pl-4 italic text-lg font-light bg-secondary bg-opacity-20 p-4 rounded-lg shadow-lg flex items-center text-white">
+						<blockquote className="border-l-4 border-secondary pl-4 italic text-lg font-light bg-tertiary bg-opacity-20 p-4 rounded-lg shadow-lg flex items-center text-white">
 							<FaQuoteLeft className="text-accent mr-3" />
 							&quot;This is a blockquote styled for emphasis and
 							readability.&quot;
@@ -120,7 +120,7 @@ export default function Typography() {
 						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
 							Lists
 						</h2>
-						<ul className="list-disc list-inside space-y-2 text-base bg-secondary bg-opacity-20 rounded-lg p-4 shadow-lg">
+						<ul className="list-disc list-inside space-y-2 text-base bg-tertiary bg-opacity-20 rounded-lg p-4 shadow-lg">
 							<li className="text-white">First item</li>
 							<li className="text-white">Second item</li>
 							<li className="text-white">Third item</li>
@@ -129,43 +129,37 @@ export default function Typography() {
 
 					{/* Tables Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold text-white mb-4 underline decoration-white">
 							Tables
 						</h2>
-						<table className="w-full border-collapse border border-secondary text-base bg-primary rounded-lg shadow-lg">
+						<table className="w-full border-collapse border border-tertiary text-base bg-primary rounded-lg shadow-lg">
 							<thead>
-								<tr className="bg-secondary text-white">
-									<th className="border border-secondary px-4 py-2">
-										Column 1
-									</th>
-									<th className="border border-secondary px-4 py-2">
-										Column 2
-									</th>
-									<th className="border border-secondary px-4 py-2">
-										Column 3
-									</th>
+								<tr className="bg-tertiary bg-opacity-40 text-white">
+									<th className="border border-tertiary px-4 py-2">Column 1</th>
+									<th className="border border-tertiary px-4 py-2">Column 2</th>
+									<th className="border border-tertiary px-4 py-2">Column 3</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td className="border border-secondary px-4 py-2 text-white">
+									<td className="border border-tertiary px-4 py-2 text-white">
 										Row 1, Col 1
 									</td>
-									<td className="border border-secondary px-4 py-2 text-white">
+									<td className="border border-tertiary px-4 py-2 text-white">
 										Row 1, Col 2
 									</td>
-									<td className="border border-secondary px-4 py-2 text-white">
+									<td className="border border-tertiary px-4 py-2 text-white">
 										Row 1, Col 3
 									</td>
 								</tr>
-								<tr className="bg-secondary bg-opacity-10">
-									<td className="border border-secondary px-4 py-2 text-white">
+								<tr className="bg-tertiary bg-opacity-10">
+									<td className="border border-tertiary px-4 py-2 text-white">
 										Row 2, Col 1
 									</td>
-									<td className="border border-secondary px-4 py-2 text-white">
+									<td className="border border-tertiary px-4 py-2 text-white">
 										Row 2, Col 2
 									</td>
-									<td className="border border-secondary px-4 py-2 text-white">
+									<td className="border border-tertiary px-4 py-2 text-white">
 										Row 2, Col 3
 									</td>
 								</tr>
@@ -175,7 +169,7 @@ export default function Typography() {
 
 					{/* Forms Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold mb-4 underline decoration-white">
 							Forms
 						</h2>
 						<form className="space-y-4 bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg">
@@ -184,7 +178,7 @@ export default function Typography() {
 							</label>
 							<input
 								type="text"
-								className="w-full border border-secondary bg-white text-black px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+								className="w-full border border-tertiary bg-white text-black px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
 								placeholder="Enter your name"
 							/>
 						</form>

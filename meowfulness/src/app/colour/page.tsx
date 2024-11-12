@@ -4,45 +4,45 @@ export default function Colour() {
 	const colors = [
 		{
 			name: "Primary",
-			hex: "#344E41",
+			hex: "#2B3A64",
 			description: "Main background color, conveying a calm, grounded feel.",
 			reasoning:
-				"Passes AA for text on primary background due to good contrast ratio with light text.",
+				"Chosen for its deep, balanced tone that contrasts effectively with light text, meeting AA standards for readability and providing a calming, stable background.",
 		},
 		{
 			name: "Secondary",
-			hex: "#3A5A40",
+			hex: "#CCD5AE",
 			description:
-				"Used for secondary accents, supporting a natural, balanced aesthetic.",
+				"Secondary accents supporting a natural, balanced aesthetic.",
 			reasoning:
-				"Passes AA for text on secondary background, providing a balanced contrast.",
+				"Selected for its soft, earthy hue, adding a natural touch that complements the primary color. Its contrast with primary text also meets AA requirements, ensuring readability.",
 		},
 		{
 			name: "Tertiary",
-			hex: "#588157",
+			hex: "#93B5F0",
 			description:
-				"Highlights sections for added visual interest without overwhelming the design.",
+				"Highlight color used to draw attention to important sections without overwhelming.",
 			reasoning:
-				"Passes AA for text on tertiary background with adequate contrast.",
+				"Offers a gentle contrast that is visually engaging, enhancing focus on highlighted areas. The color pairs well with primary text to meet AA standards for legibility.",
 		},
 		{
 			name: "Accent",
-			hex: "#A3B18A",
+			hex: "#FFEBED",
 			description:
-				"Accent for interactive elements like buttons, providing a fresh and vibrant touch.",
+				"Accent color for interactive elements, bringing a fresh, vibrant touch.",
 			reasoning:
-				"Passes AA for text on accent background; ensures readability and clarity.",
+				"Selected for its soft warmth, the accent color stands out subtly, providing a clear visual cue without overpowering. Meets AA contrast standards with primary text for clarity and usability.",
 		},
 	];
 
 	const getTextColor = (hex: string) => {
-		return hex === "#A3B18A" || hex === "#FFFFFF" ? "text-black" : "text-white";
+		return hex === "#2B3A64" ? "white" : "primary";
 	};
 
 	return (
-		<div className="bg-tertiary min-h-screen w-full text-white px-8 py-12">
+		<div className="bg-tertiary min-h-screen w-full px-8 py-12">
 			<Nav />
-			<section className="mt-8 flex flex-col items-center text-white px-2">
+			<section className="mt-8 flex flex-col items-center text-primary px-2">
 				<h1 className="font-bold text-5xl mb-4 underline decoration-accent">
 					Colour Style Guide
 				</h1>
@@ -54,44 +54,65 @@ export default function Colour() {
 
 				{/* Palette Explanation */}
 				<h2 className="text-3xl font-bold underline decoration-accent mb-4">
-					Color Palette Rationale
+					Colour Palette Rationale
 				</h2>
-				<p className="text-lg mb-8 text-center">
-					Our color palette centers around green tones to bring a sense of
-					nature, balance, and calmness to our app, creating a soothing
-					environment that promotes relaxation and reduces anxiety. Green&apos;s
-					natural associations with growth and renewal subtly reinforce themes
-					of personal growth and healing, making our app feel grounded and
-					supportive.
-				</p>
-				<p className="text-lg mb-8 text-center">
-					Psychologically, green promotes balance and harmony, helping users
-					feel centered as they navigate mental health challenges. It&apos;s
-					also gentle on the eyes, making it comfortable for prolonged use, and
-					symbolically aligns with health and well-being, reinforcing positive,
-					wellness-focused interactions within the app.
-				</p>
+				<div className="flex flex-col gap-4 bg-white rounded-lg shadow-lg p-4 mb-8">
+					<p className="text-lg text-center bg-primary text-white rounded-lg shadow-lg	px-2 py-4">
+						Our primary colour, a rich, deep blue, creates a sense of stability
+						and trust, which is essential in an app focused on wellness. The
+						darker tone provides strong contrast for readability, while evoking
+						calmness and security, essential for a mental health-focused
+						application.
+					</p>
+					<p className="text-lg text-center bg-secondary text-primary rounded-lg shadow-lg px-2 py-4">
+						Our secondary colour, a soft sage green, introduces a touch of
+						nature-inspired calmness and balance to the palette. This green is
+						welcoming and gentle on the eyes, reinforcing a soothing atmosphere.
+						It subtly highlights elements without overpowering them, creating a
+						cohesive, calming user experience.
+					</p>
+					<p className="text-lg text-center bg-tertiary text-primary rounded-lg shadow-lg px-2 py-4">
+						Our tertiary colour, a soft light blue, adding a layer of freshness
+						and lightness to the palette. Blue tones are often associated with
+						relaxation and mental clarity, making it an ideal choice to
+						reinforce themes of well-being and emotional support. It provides a
+						gentle contrast that harmonizes well with both the primary and
+						secondary colours.
+					</p>
+					<p className="text-lg text-center bg-accent text-primary rounded-lg shadow-lg px-2 py-4">
+						Our accent color, a soft, warm pink, adds a touch of warmth and
+						approachability. This color complements the coolness of the primary
+						and tertiary tones, balancing the palette and bringing subtle visual
+						interest. It is used sparingly to highlight interactive elements or
+						calls to action, making the app feel more welcoming and emotionally
+						engaging.
+					</p>
+				</div>
 
 				{/* Color Palette Cards */}
-				<div className="w-full grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+				<div className="w-full grid gap-8 sm:grid-cols-2 md:grid-cols-2 bg-white p-4 rounded-lg shadow-lg">
 					{colors.map((color) => (
 						<div
 							key={color.name}
 							className="p-6 rounded-lg shadow-lg text-center space-y-4"
 							style={{ backgroundColor: color.hex }}
 						>
-							<div className="font-bold text-2xl underline decoration-white">
+							<div
+								className={`font-bold text-2xl underline decoration-${getTextColor} text-${getTextColor(
+									color.hex
+								)}`}
+							>
 								{color.name}
 							</div>
 							<p
-								className={`text-sm font-light italic ${getTextColor(
+								className={`text-sm font-light italic text-${getTextColor(
 									color.hex
 								)}`}
 							>
 								{color.description}
 							</p>
 							<div
-								className={`text-sm font-medium mt-2 ${getTextColor(
+								className={`text-sm font-medium mt-2 text-${getTextColor(
 									color.hex
 								)}`}
 							>
@@ -109,15 +130,27 @@ export default function Colour() {
 					{/* Button Variations */}
 					<div className="space-y-4">
 						<p className="text-lg font-semibold">Button Variations</p>
-						<div className="flex space-x-4 bg-white rounded">
-							<button className="px-4 py-2 bg-secondary text-white font-bold rounded">
+						<div className="flex space-x-4 bg-white rounded-lg p-4 shadow-lg">
+							<button className="px-4 py-2 bg-primary text-white font-bold rounded">
 								Primary Button
 							</button>
-							<button className="px-4 py-2 bg-primary text-white font-bold rounded">
+							<button className="px-4 py-2 bg-secondary text-primary font-bold rounded">
 								Secondary Button
 							</button>
-							<button className="px-4 py-2 bg-white text-secondary text-opacity-60 border-2 border-opacity-60 border-secondary bg-opacity-60 font-bold rounded cursor-not-allowed">
-								Disabled Button
+							<button className="px-4 py-2 bg-white text-primary border-2 border-primary font-bold rounded">
+								Outlined Button
+							</button>
+						</div>
+						<p className="text-lg font-semibold">Disabled Button Variations</p>
+						<div className="flex space-x-4 bg-white rounded-lg p-4 shadow-lg">
+							<button className="px-4 py-2 bg-primary bg-opacity-70 text-white font-bold rounded cursor-not-allowed">
+								Primary Button
+							</button>
+							<button className="px-4 py-2 bg-secondary bg-opacity-70 text-primary font-bold rounded cursor-not-allowed">
+								Secondary Button
+							</button>
+							<button className="px-4 py-2 bg-white text-primary text-opacity-70 border-2 border-primary border-opacity-70 font-bold rounded cursor-not-allowed">
+								Outlined Button
 							</button>
 						</div>
 					</div>
@@ -125,17 +158,17 @@ export default function Colour() {
 					{/* Text on Solid Color Backgrounds */}
 					<div className="space-y-4">
 						<p className="text-lg font-semibold">Text on Colour Backgrounds</p>
-						<div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2">
+						<div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 bg-white rounded-lg shadow-lg p-4">
 							<div className="p-4 bg-primary text-white font-medium rounded">
 								Text on Primary Background
 							</div>
-							<div className="p-4 bg-secondary text-white font-medium rounded">
+							<div className="p-4 bg-secondary text-primary font-medium rounded">
 								Text on Secondary Background
 							</div>
-							<div className="p-4 bg-tertiary text-black font-medium rounded shadow-md">
+							<div className="p-4 bg-tertiary text-primary font-medium rounded shadow-md">
 								Text on Tertiary Background
 							</div>
-							<div className="p-4 bg-accent text-black font-medium rounded">
+							<div className="p-4 bg-accent text-primary font-medium rounded">
 								Text on Accent Background
 							</div>
 						</div>
@@ -195,37 +228,21 @@ export default function Colour() {
 					guidelines for normal text.
 				</p>
 
-				<div className="mt-8 w-full grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-					{/* Replace placeholders with actual contrast check screenshots */}
+				<div className="mt-8 w-full grid gap-4 grid-cols-2">
 					{colors.map((color) => (
-						<div key={color.name} className="space-y-2 text-center">
+						<div
+							key={color.name}
+							className="space-y-4 text-center bg-white shadow-lg rounded-lg p-4"
+						>
+							<p className="text-lg font-bold">{color.name} Contrast</p>
 							<img
 								src={`/contrast-checks/${color.name.toLowerCase()}-contrast.png`}
 								alt={`${color.name} contrast check`}
 								className="w-full rounded-lg"
 							/>
-							<p className="text-lg font-medium">{color.name} Contrast</p>
-							<p className="text-sm italic">{color.reasoning}</p>
+							<p className="text-sm">{color.reasoning}</p>
 						</div>
 					))}
-					<div className="space-y-2 text-center">
-						<img
-							src="/contrast-checks/navicons-contrast.png"
-							alt="Nav Icons contrast check"
-							className="w-full rounded-lg"
-						/>
-						<p className="text-lg font-medium">Nav Icon Contrast</p>
-						<p className="text-sm italic">
-							Used as the accent color for the background, with icons in the
-							primary color for contrast.
-						</p>
-						<p className="text-sm italic">
-							While this combination does not meet the AA contrast ratio
-							standards for text, the WCAG guidelines do not specifically
-							account for icons and stroke width, which may still provide
-							sufficient visibility depending on the design and context.
-						</p>
-					</div>
 				</div>
 			</section>
 		</div>
