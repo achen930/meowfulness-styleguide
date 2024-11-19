@@ -22,24 +22,28 @@ export default function Typography() {
 							Headers
 						</h2>
 						<div className="space-y-3 bg-tertiary bg-opacity-20 rounded-lg p-6 shadow-lg">
-							<h1 className="text-5xl font-bold text-white">
-								H1 - DM Sans Bold 5xl
+							<h1 className="text-[24px] font-semibold text-white">
+								H1 - DM Sans Semibold 28px
 							</h1>
-							<h2 className="text-4xl font-semibold text-white">
-								H2 - DM Sans SemiBold 4xl
+							<h2 className="text-[20px] font-medium text-white">
+								H2 - DM Sans Medium 24px
 							</h2>
-							<h3 className="text-3xl font-semibold text-white">
-								H3 - DM Sans SemiBold 3xl
+							<h3 className="text-[16px] font-semibold text-white">
+								H3 - DM Sans SemiBold 20px
 							</h3>
-							<h4 className="text-2xl font-medium text-white">
-								H4 - DM Sans Medium 2xl
+							<h4 className="text-[15px] font-medium text-white">
+								H4 - DM Sans Medium 18px
 							</h4>
-							<h5 className="text-xl font-medium text-white">
-								H5 - DM Sans Medium xl
+							<h5 className="text-[14px] font-medium text-white">
+								H5 - DM Sans Medium 16px
 							</h5>
-							<h6 className="text-lg font-medium text-white">
-								H6 - DM Sans Medium lg
+							<h6 className="text-[13px] font-medium text-white">
+								H6 - DM Sans Medium 15px
 							</h6>
+							<p className="text-[12px] font-normal text-white">Subtitle</p>
+							<p className="text-[16px] font-semibold text-white">
+								Button Text
+							</p>
 						</div>
 					</div>
 
@@ -48,8 +52,8 @@ export default function Typography() {
 						<h2 className="text-3xl font-semibold mb-4 underline decoration-white">
 							Paragraphs
 						</h2>
-						<p className="text-base font-normal bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg text-white">
-							This is a sample paragraph styled with "DM Sans" in normal weight.
+						<p className="text-[14px] font-medium bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg text-white">
+							This is a sample paragraph styled with "DM Sans" in medium weight.
 							The choice of DM Sans offers a clean and modern look, perfect for
 							easy readability across devices.
 						</p>
@@ -79,22 +83,13 @@ export default function Typography() {
 							Navigation Menu
 						</h2>
 						<nav className="text-lg space-x-8 bg-tertiary bg-opacity-20 rounded-lg p-4 shadow-lg">
-							<a
-								href="#"
-								className="font-semibold text-white hover:text-accent transition duration-200"
-							>
+							<a className="font-semibold text-white hover:text-accent transition duration-200">
 								Home
 							</a>
-							<a
-								href="#"
-								className="font-semibold text-white hover:text-accent transition duration-200"
-							>
+							<a className="font-semibold text-white hover:text-accent transition duration-200">
 								About
 							</a>
-							<a
-								href="#"
-								className="font-semibold text-white hover:text-accent transition duration-200"
-							>
+							<a className="font-semibold text-white hover:text-accent transition duration-200">
 								Contact
 							</a>
 							<p className="text-sm italic mt-2 text-white">
@@ -105,7 +100,7 @@ export default function Typography() {
 
 					{/* Blockquotes Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold text-white mb-4 underline decoration-white">
 							Blockquotes
 						</h2>
 						<blockquote className="border-l-4 border-secondary pl-4 italic text-lg font-light bg-tertiary bg-opacity-20 p-4 rounded-lg shadow-lg flex items-center text-white">
@@ -117,7 +112,7 @@ export default function Typography() {
 
 					{/* Lists Section */}
 					<div>
-						<h2 className="text-3xl font-semibold text-accent mb-4 underline decoration-white">
+						<h2 className="text-3xl font-semibold text-white mb-4 underline decoration-white">
 							Lists
 						</h2>
 						<ul className="list-disc list-inside space-y-2 text-base bg-tertiary bg-opacity-20 rounded-lg p-4 shadow-lg">
@@ -178,7 +173,7 @@ export default function Typography() {
 							</label>
 							<input
 								type="text"
-								className="w-full border border-tertiary bg-white text-black px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+								className="w-full border border-tertiary bg-white text-black px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-tertiary"
 								placeholder="Enter your name"
 							/>
 						</form>

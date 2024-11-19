@@ -130,35 +130,47 @@ export default function Colour() {
 					{/* Button Variations */}
 					<div className="space-y-4">
 						<p className="text-lg font-semibold">Button Variations</p>
-						<div className="flex space-x-4 bg-white rounded-lg p-4 shadow-lg">
-							<button className="px-4 py-2 bg-primary text-white font-bold rounded">
-								Primary Button
-							</button>
-							<button className="px-4 py-2 bg-secondary text-primary font-bold rounded">
-								Secondary Button
-							</button>
-							<button className="px-4 py-2 bg-white text-primary border-2 border-primary font-bold rounded">
-								Outlined Button
-							</button>
+						<div className="flex space-x-4">
+							<div className="bg-white p-4 rounded">
+								<button className="px-4 py-2 bg-primary text-white font-bold rounded">
+									Primary Button
+								</button>
+							</div>
+							<div className="bg-white p-4 rounded">
+								<button className="px-4 py-2 bg-secondary text-primary font-bold rounded">
+									Secondary Button
+								</button>
+							</div>
+							<div className="bg-primary p-4 rounded">
+								<button className="px-4 py-2 bg-primary text-white border-2 border-white font-bold rounded">
+									Outlined Button
+								</button>
+							</div>
 						</div>
 						<p className="text-lg font-semibold">Disabled Button Variations</p>
-						<div className="flex space-x-4 bg-white rounded-lg p-4 shadow-lg">
-							<button className="px-4 py-2 bg-primary bg-opacity-70 text-white font-bold rounded cursor-not-allowed">
-								Primary Button
-							</button>
-							<button className="px-4 py-2 bg-secondary bg-opacity-70 text-primary font-bold rounded cursor-not-allowed">
-								Secondary Button
-							</button>
-							<button className="px-4 py-2 bg-white text-primary text-opacity-70 border-2 border-primary border-opacity-70 font-bold rounded cursor-not-allowed">
-								Outlined Button
-							</button>
+						<div className="flex space-x-4">
+							<div className="bg-white p-4 rounded">
+								<button className="px-4 py-2 bg-primary bg-opacity-70 text-white font-bold rounded cursor-not-allowed">
+									Primary Button
+								</button>
+							</div>
+							<div className="bg-white p-4 rounded">
+								<button className="px-4 py-2 bg-secondary bg-opacity-70 text-primary font-bold rounded cursor-not-allowed">
+									Secondary Button
+								</button>
+							</div>
+							<div className="bg-primary p-4 rounded">
+								<button className="px-4 py-2 bg-primary text-white text-opacity-70 border-2 border-white border-opacity-70 font-bold rounded cursor-not-allowed">
+									Outlined Button
+								</button>
+							</div>
 						</div>
 					</div>
 
 					{/* Text on Solid Color Backgrounds */}
 					<div className="space-y-4">
 						<p className="text-lg font-semibold">Text on Colour Backgrounds</p>
-						<div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 bg-white rounded-lg shadow-lg p-4">
+						<div className="flex flex-col sm:flex-row sm:space-x-2 bg-white rounded-lg shadow-lg p-4">
 							<div className="p-4 bg-primary text-white font-medium rounded">
 								Text on Primary Background
 							</div>
@@ -177,41 +189,47 @@ export default function Colour() {
 					{/* Nav Icon Examples  */}
 					<div className="mt-12">
 						<p className="text-lg font-semibold mb-4">Nav Icons</p>
-						<div className="flex gap-1x justify-center bg-white rounded-lg">
+						<div className="flex gap-1x justify-center bg-white rounded-lg p-4">
 							<div className="flex justify-center items-center">
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M5.12104 17.8037C7.15267 16.6554 9.4998 16 12 16C14.5002 16 16.8473 16.6554 18.879 17.8037M15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-										stroke="#344E41"
-										strokeWidth="2"
-										strokeLinecap="round"
-										strokeLinejoin="round"
-									/>
-								</svg>
-							</div>
-							<div className="flex justify-center items-center">
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 32 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<ellipse cx="16" cy="14" rx="16" ry="14" fill="#A3B18A" />
-									<path
-										d="M7 14L9 12M9 12L16 5L23 12M9 12V22C9 22.5523 9.44772 23 10 23H13M23 12L25 14M23 12V22C23 22.5523 22.5523 23 22 23H19M13 23C13.5523 23 14 22.5523 14 22V18C14 17.4477 14.4477 17 15 17H17C17.5523 17 18 17.4477 18 18V22C18 22.5523 18.4477 23 19 23M13 23H19"
-										stroke="#344E41"
-										strokeWidth="2"
-										strokeLinecap="round"
-										strokeLinejoin="round"
-									/>
-								</svg>
+								<div className="hover:bg-secondary rounded-[100px] w-full h-full px-8 cursor-pointer">
+									<svg
+										width="71"
+										height="72"
+										viewBox="0 0 71 72"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M47.5552 60.9375C47.2594 61.0875 46.9265 61.2375 46.5937 61.3875C45.4844 61.875 44.375 62.2875 43.2286 62.625C29.8792 66.6 15.938 59.8125 10.4651 47.25C11.6484 45.525 13.2015 44.025 14.8286 42.7875C14.5328 39.825 15.1984 36.825 17.3062 33.675C20.7083 34.6875 23.6297 36.525 25.9594 39.225C29.7312 38.5125 33.3552 39.075 36.8312 40.5375C39.9005 38.9625 42.8219 38.1 45.5583 38.2125C45.8541 38.175 46.15 38.4 46.2239 38.7375C46.8156 42 46.5198 45.0375 45.2255 47.8125C47.1854 52.125 48.4797 56.7 47.5552 60.9375Z"
+											stroke="#2B3A64"
+											strokeWidth="5"
+											strokeMiterlimit="10"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+										/>
+										<path
+											d="M22.1135 51.15C23.3389 51.15 24.3323 50.1427 24.3323 48.9C24.3323 47.6574 23.3389 46.65 22.1135 46.65C20.8881 46.65 19.8948 47.6574 19.8948 48.9C19.8948 50.1427 20.8881 51.15 22.1135 51.15Z"
+											fill="#2B3A64"
+										/>
+										<path
+											d="M37.1271 53.2875C38.3525 53.2875 39.3458 52.2801 39.3458 51.0375C39.3458 49.7948 38.3525 48.7875 37.1271 48.7875C35.9017 48.7875 34.9083 49.7948 34.9083 51.0375C34.9083 52.2801 35.9017 53.2875 37.1271 53.2875Z"
+											fill="#2B3A64"
+										/>
+										<path
+											d="M47.5552 60.9375C47.2594 61.0875 46.9266 61.2375 46.5938 61.3875C45.4844 61.875 44.375 62.2875 43.2287 62.625C29.8792 66.6 15.938 59.8125 10.4651 47.25C10.2802 46.8 10.0953 46.35 9.91044 45.8625C9.68857 45.1875 9.42971 44.5125 9.24482 43.8375C4.99221 29.1375 13.2755 13.725 27.7714 9.37502C42.2672 5.06252 57.4656 13.425 61.7552 28.1625C65.5641 41.325 59.3146 55.0875 47.5552 60.9375Z"
+											stroke="#2B3A64"
+											strokeWidth="5"
+											strokeMiterlimit="10"
+										/>
+										<path
+											d="M45.3734 48.225L52.5843 43.9875V27.75L38.7172 19.6125L24.85 27.75V36.975"
+											stroke="#2B3A64"
+											strokeWidth="5"
+											strokeMiterlimit="10"
+											strokeLinejoin="round"
+										/>
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>

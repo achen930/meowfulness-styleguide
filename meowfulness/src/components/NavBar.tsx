@@ -7,7 +7,7 @@ export default function Nav() {
 	console.log(pathname);
 	return (
 		<div>
-			<ul className="flex justify-between mx-4">
+			<ul className="flex justify-between mx- font-medium">
 				<Link
 					href="/logo"
 					className={
