@@ -33,7 +33,7 @@ export default function Home() {
     const interval = setInterval(() => {
       if (scrollContainerRef.current) {
         const sectionWidth = window.innerWidth;
-        let nextSection = (currentSection + 1) % 5;
+        const nextSection = (currentSection + 1) % 5;
         scrollContainerRef.current.scrollTo({
           left: nextSection * sectionWidth,
           behavior: "smooth",
