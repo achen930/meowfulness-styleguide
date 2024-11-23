@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const pathname = usePathname();
-  // console.log(pathname);
+
   return (
     <div
       className={
@@ -13,14 +13,14 @@ export default function Nav() {
           : "border-primary border-2 rounded-lg p-6 shadow-lg"
       }
     >
-      <ul className="flex justify-between gap-2 font-medium text-[24px] mx-2">
+      <ul className="flex flex-wrap sm:flex-row flex-col sm:justify-between gap-2 font-medium text-[24px] mx-2 overflow-auto">
         <Link
           href="/"
           className={
             (pathname === "/logo"
               ? "hover:underline hover:decoration-black hover:text-black"
-              : "") +
-            (pathname === "/colour"
+              : "hover:underline hover:decoration-accent hover:text-accent") +
+            (pathname === "/colour" || pathname === "/references"
               ? "hover:underline hover:decoration-tertiary hover:text-tertiary"
               : "")
           }
@@ -33,7 +33,7 @@ export default function Nav() {
             (pathname === "/logo"
               ? "text-black"
               : "hover:underline hover:decoration-accent hover:text-accent") +
-            (pathname === "/colour"
+            (pathname === "/colour" || pathname === "/references"
               ? "hover:underline hover:decoration-tertiary hover:text-tertiary"
               : "")
           }
@@ -46,7 +46,7 @@ export default function Nav() {
             (pathname === "/typography"
               ? "text-accent"
               : "hover:underline hover:decoration-accent hover:text-accent") +
-            (pathname === "/colour"
+            (pathname === "/colour" || pathname === "/references"
               ? "hover:underline hover:decoration-tertiary hover:text-tertiary"
               : "") +
             (pathname === "/logo"
@@ -62,7 +62,7 @@ export default function Nav() {
             (pathname === "/graphics"
               ? "text-accent"
               : "hover:underline hover:decoration-accent hover:text-accent") +
-            (pathname === "/colour"
+            (pathname === "/colour" || pathname === "/references"
               ? "hover:underline hover:decoration-tertiary hover:text-tertiary"
               : "") +
             (pathname === "/logo"
@@ -80,6 +80,9 @@ export default function Nav() {
               : "hover:underline hover:decoration-accent hover:text-accent") +
             (pathname === "/logo"
               ? "hover:underline hover:decoration-black hover:text-black"
+              : "") +
+            (pathname === "/references"
+              ? "hover:underline hover:decoration-tertiary hover:text-tertiary"
               : "")
           }
         >
@@ -89,7 +92,7 @@ export default function Nav() {
           href="/references"
           className={
             (pathname === "/references"
-              ? "text-accent"
+              ? "text-tertiary"
               : "hover:underline hover:decoration-accent hover:text-accent") +
             (pathname === "/colour"
               ? "hover:underline hover:decoration-tertiary hover:text-tertiary"

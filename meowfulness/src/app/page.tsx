@@ -33,7 +33,7 @@ export default function Home() {
     const interval = setInterval(() => {
       if (scrollContainerRef.current) {
         const sectionWidth = window.innerWidth;
-        const nextSection = (currentSection + 1) % 5;
+        const nextSection = (currentSection + 1) % 6;
         scrollContainerRef.current.scrollTo({
           left: nextSection * sectionWidth,
           behavior: "smooth",
@@ -90,7 +90,7 @@ export default function Home() {
           </p>
           <Link
             href="/typography"
-            className="mt-4 bg-tertiary text-primary font-semibold py-2 px-4 rounded-lg"
+            className="mt-4 bg-tertiary text-primary font-semibold py-2 px-4 rounded-lg hover:bg-accent"
           >
             See Typography
           </Link>
@@ -102,7 +102,7 @@ export default function Home() {
           </p>
           <Link
             href="/graphics"
-            className="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            className="mt-4 bg-primary text-white py-2 px-4 rounded-lg text-semibold hover:bg-white hover:text-primary"
           >
             See Graphics
           </Link>
@@ -110,19 +110,31 @@ export default function Home() {
         <section className="w-screen flex-shrink-0 p-8 flex flex-col items-center justify-center bg-accent text-primary">
           <h2 className="text-3xl font-semibold">Colours</h2>
           <p className="mt-2 text-center max-w-md">
-            Soothing, pastel colors that create a serene experience.
+            Soothing, pastel colours that create a serene experience.
           </p>
           <Link
             href="/colour"
-            className="mt-4 bg-tertiary text-primary font-semibold py-2 px-4 rounded-lg"
+            className="mt-4 bg-tertiary text-primary font-semibold py-2 px-4 rounded-lg hover:bg-secondary"
           >
-            See Colors
+            See Colours
+          </Link>
+        </section>
+        <section className="w-screen flex-shrink-0 p-8 flex flex-col items-center justify-center bg-white text-primary">
+          <h1 className="text-4xl font-bold mt-4">References</h1>
+          {/* <p className="mt-4 text-center max-w-sm">
+            Your guide to staying calm, cute, and happy!
+          </p> */}
+          <Link
+            href="/references"
+            className="mt-6 bg-primary text-tertiary font-semibold py-2 px-4 rounded-lg hover:bg-tertiary hover:text-primary"
+          >
+            See References
           </Link>
         </section>
       </div>
 
       <div className="absolute flex justify-center gap-6 w-auto p-3 z-10 bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 rounded-full shadow-lg">
-        {[0, 1, 2, 3, 4].map((index) => (
+        {[0, 1, 2, 3, 4, 5].map((index) => (
           <button
             key={index}
             onClick={() => handleIndicatorClick(index)}

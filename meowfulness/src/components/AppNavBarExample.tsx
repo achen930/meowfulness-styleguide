@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function NavExample() {
   const [navSelected, setNavSelected] = useState<string>("Home");
   return (
-    <div className="flex justify-center items-center bg-white w-full rounded-lg p-4 shadow-md">
+    <div className="flex justify-center items-center bg-white w-full rounded-lg p-4 shadow-md overflow-auto flex-wrap">
       <div
         className="flex flex-col justify-center items-center mx-2"
         onClick={() => setNavSelected("Purrnal")}
