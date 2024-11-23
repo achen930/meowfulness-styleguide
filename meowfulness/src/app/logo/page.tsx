@@ -80,7 +80,7 @@ export default function Logo() {
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <h3 className="text-xl font-medium ">1. Full-Color Logo</h3>
             <img
-              src="../../../.vercel/output/static/logos/full-color-logo.png"
+              src="/logos/full-color-logo.png"
               alt="Full Color Logo"
               className="w-64 mx-auto"
             />
@@ -110,7 +110,7 @@ export default function Logo() {
           <div className="bg-white p-4 rounded-lg shadow-lg">
             <h3 className="text-xl font-medium ">4. Monochrome Logo</h3>
             <img
-              src="../../../.vercel/output/static/logos/monochrome-logo.png"
+              src="/logos/monochrome-logo.png"
               alt="Monochrome Logo"
               className="w-64 mx-auto"
             />
@@ -122,7 +122,7 @@ export default function Logo() {
               5. Stacked/Vertical Version
             </h3>
             <img
-              src="../../../.vercel/output/static/logos/full-color-logo.png"
+              src="/logos/full-color-logo.png"
               alt="Stacked Version of Full-Color Logo"
               className="w-64 mx-auto"
             />
@@ -135,7 +135,7 @@ export default function Logo() {
             </div>
             <div className="flex-grow justify-center items-center">
               <img
-                src="../../../.vercel/output/static/logos/horizontal-logo.png"
+                src="/logos/horizontal-logo.png"
                 alt="Horizontal Version of Full-Color Logo"
                 className="w-64 mx-auto"
               />
@@ -149,7 +149,7 @@ export default function Logo() {
               <div className="flex flex-col justify-center items-center">
                 <h4 className="text-lg font-semibold ">16x16px</h4>
                 <img
-                  src="../../../.vercel/output/static/favicons/favicon-16x16.png"
+                  src="/favicons/favicon-16x16.png"
                   alt="Favicon 16x16"
                   className="w-4 h-4"
                 />
@@ -157,7 +157,7 @@ export default function Logo() {
               <div className="flex flex-col justify-center items-center">
                 <h4 className="text-lg font-semibold ">32x32px</h4>
                 <img
-                  src="../../../.vercel/output/static/favicons/favicon-32x32.png"
+                  src="/favicons/favicon-32x32.png"
                   alt="Favicon 32x32"
                   className="w-8 h-8"
                 />
@@ -165,7 +165,7 @@ export default function Logo() {
               <div className="flex flex-col justify-center items-center">
                 <h4 className="text-lg font-semibold ">48x48px</h4>
                 <img
-                  src="../../../.vercel/output/static/favicons/favicon-48x48.png"
+                  src="/favicons/favicon-48x48.png"
                   alt="Favicon 48x48"
                   className="w-12 h-12"
                 />
