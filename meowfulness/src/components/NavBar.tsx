@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
   return (
     <div
       className={
@@ -14,6 +14,19 @@ export default function Nav() {
       }
     >
       <ul className="flex justify-between gap-2 font-medium text-[24px] mx-2">
+        <Link
+          href="/"
+          className={
+            (pathname === "/logo"
+              ? "hover:underline hover:decoration-black hover:text-black"
+              : "") +
+            (pathname === "/colour"
+              ? "hover:underline hover:decoration-tertiary hover:text-tertiary"
+              : "")
+          }
+        >
+          <li>Home</li>
+        </Link>
         <Link
           href="/logo"
           className={

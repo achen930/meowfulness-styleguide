@@ -177,7 +177,7 @@ export default function Typography() {
             <h2 className="text-3xl font-semibold mb-4 underline decoration-tertiary">
               Forms
             </h2>
-            <form className="space-y-4 bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg">
+            <div className="space-y-4 bg-tertiary bg-opacity-20 p-6 rounded-lg shadow-lg">
               <label className="block text-lg font-medium text-white">
                 Name
               </label>
@@ -186,7 +186,7 @@ export default function Typography() {
                 className="w-full border border-tertiary bg-white text-primary px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-tertiary"
                 placeholder="Enter your name"
               />
-            </form>
+            </div>
           </div>
         </div>
       </section>

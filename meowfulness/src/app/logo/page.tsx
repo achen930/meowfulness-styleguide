@@ -7,6 +7,10 @@ export default function Logo() {
       <h1 className="text-5xl font-bold text-center underline decoration-white">
         Logo Design
       </h1>
+      <p className="text-lg mb-8 text-center italic">
+        This guide outlines the design principles and usage rules for our logo,
+        ensuring consistent and effective brand representation.
+      </p>
 
       {/* Design Rationale */}
       <section className="space-y-8 flex flex-col items-start">
